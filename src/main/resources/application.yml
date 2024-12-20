@@ -1,0 +1,19 @@
+server:
+  port: 9797
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+    context-path: /gxNet
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-aliases-package: com.gx.gxblog.mybatis.entity
+  mapper-locations: classpath:mappers/*.xml
+
+spring:
+  config:
+    activate:
+      on-profile: dev

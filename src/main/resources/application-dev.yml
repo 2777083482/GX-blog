@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: ${jdbc.url}
+    driver-class-name: ${jdbc.driver}
+    username: ${jdbc.username}
+    password: ${jdbc.password}
